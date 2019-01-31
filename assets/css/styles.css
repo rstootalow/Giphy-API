@@ -1,0 +1,10 @@
+#bootstrap-override, #topics {
+    border: solid 1px black;
+    width: 100%;
+}
+
+.actor-button {
+    background-color: teal;
+    color: white;
+    margin: 10px;
+}
