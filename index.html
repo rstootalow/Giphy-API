@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- jQuery Link -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Giphy API Assignment</title>
 </head>
-<body>
-    
+<body id="bootstrap-override">
+    <div id="buttons"></div> <!-- Dynamic buttons will be appended here -->
+
+    <!-- Form that will act as gif search and add buttons to page -->
+    <form id="actor-form">
+        <label for="actor-gif-input">Enter Actor or Actress Name Here: </label>
+        <input type="text" id="actor-input">
+        <br>
+        <input type="submit" value="Add Actor or Actress" id="add-actor">
+    </form>
+
+    <!-- gifs will go here after button click -->
+    <div class="gif-container"></div>
+ <!-- jQuery Link -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Javascript -->
+<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
