@@ -1,0 +1,77 @@
+// APP VARIABLES - Actors
+
+
+
+// ******************************************************************** OLDER CODE ********************************************************************************************************************************
+
+
+// var topics = ['Robert Dinero', 'Al Pacino', 'Nicholas Cage', 'Josh Brolin', 'Ryan Renolds', 'Hugh Jackman', 'Michelle Pfier', 'Jennifer Lawrence', 'Melissa McCarthy', 'Robert Downey Jr.', 'Marc Ruffalo'];
+
+// function buttonCreate() {
+//     // iterate through array of actors
+//     for (var i = 0; i < topics.length; i++) {
+//         $("#buttons").prepend(`<button type="button" data-value="${topics[i]}">${topics[i]}</button>`);
+//     }
+// }
+
+// function gifInfo() {
+//     // event listener for all buttons
+//     $('#buttons').on('click', function() {
+// Boolean        // create variable for specifc button on a click
+//         var actor = $(this).attr('data-value');
+//         // url query and api variables for ajax call
+//         
+//         // AJAX CALL
+//         $.ajax({
+//             url: queryURL,
+//             method: "GET",
+//         }).then(function(response) {
+//             // search bar functionality
+//             $('#submit').on('click', function(){
+//                 var searchVal = $('#add-actor').val();
+//                 var queryURL = 'https://api.giphy.com/v1/gifs/search?q=&api_key=' + apiKey;
+//             console.log(searchVal);
+//             // 
+//             console.log(response);
+//             var results = response.data;
+//             // loop over all results
+//             for (var i = 0; i < results.length; i++) {
+//                 // for all results, create a div to store it in
+//                 var gifDiv = $('<div>');
+//                 // paragraph tag to add and display rating ranking to
+//                 var rating = results[i].rating;
+//                 var p = $('<p>').text('Rating: ' + rating);
+//                 var actorImage = $('<img>');
+//                 actorImage.attr('src', results[i].images.fixed_height.url);
+//                 gifDiv.append(p);
+//                 gifDiv.append(actorImage);
+//                 $('.gif-container').prepend(gifDiv);
+//             }
+//         })
+//     })
+// })
+// }
+
+// function searchGif() {
+//     $('#submit').on('click', function(){
+//         var searchVal = $('add-actor').val();
+//         var queryURL = 'https://api.giphy.com/v1/gifs/search?q=&api_key=' + apiKey;
+//         console.log(searchVal);
+
+//         // link to giphy api q= to find searchable items
+
+        
+//     })
+// }
+
+// }
+            
+// END of Gif Function
+
+
+
+// // FUNCTION CALLS
+// gifInfo();
+// buttonCreate();
+
+// ******************************************************************** OLDER CODE ********************************************************************************************************************************

@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Bootstrap Link -->
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- GOOGFLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
-    <title>Giphy API Assignment</title>
+    <title>Giphy API with Actors</title>
 </head>
 <body id="bootstrap-override">
-    <div id="buttons"></div> <!-- Dynamic buttons will be appended here -->
+    <div class="jumbotron">
+        <div class="functionality">
+            <h1>Hollywood Gifs</h1>
+            <h5>Click the buttons to display 10 random gifs of any actor or actress</h5>
+            <h5>Click on each gif to pause or play them</h5>
+            <h5>Use the search box to enter buttons and gifs of other actors or actresses</h5>
+        </div>
+      </div>
+      
+      <form class="form-inline" id="actorSearch">
+        <div class="form-group">
+          <label for="actorInput">Search for an actor or actress:</label>
+          <input type="text" id="actorInput">
+        </div>
+        <!-- Button triggers actor to be added -->
+        <input id="addActor" type="submit" value="submit">
+      </form>
+      
+      <div class="row">
+        <div class="container">
+          <div class="btn-group inline pull-left">
+            <button id="actor" data-search="Al Pacino">Al Pacino</button>
+            <button id="actor" data-search="Nicholas Cage">Nicholas Cage</button>
+            <button id="actor" data-search="Josh Brolin">Josh Brolin</button>
+            <button id="actor" data-search="Ryan Reynolds">Ryan Reynolds</button>
+            <button id="actor" data-search="Jennifer Lawrence">Jennifer Lawrence</button>
+            <button id="actor" data-search="Cate Blanchett">Cate Blanchette</button>
+            <div id="buttons"></div>
+          </div> <!--end of button group -->
+        </div> <!--end of container -->
+      </div> <!--end of row -->
 
-    <!-- Form that will act as gif search and add buttons to page -->
-    <form id="actor-form">
-        <label for="actor-gif-input">Enter Actor or Actress Name Here: </label>
-        <input type="text" id="actor-input">
-        <br>
-        <input type="submit" value="Add Actor or Actress" id="add-actor">
-    </form>
+      <div class="row">
+        <div class="container">
+            <div id="gif-container"></div>
+        </div> <!--end of container -->
+      </div> <!-- end of row  -->
+      
+      
+      <!-- JAVASCRIPT -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <!-- gifs will go here after button click -->
-    <div class="gif-container"></div>
- <!-- jQuery Link -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<!-- Javascript -->
-<script type="text/javascript" src="assets/js/app.js"></script>
-</body>
+      <script type='text/javascript' src='assets/js/app.js'></script>
+    </body>
 </html>

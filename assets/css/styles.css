@@ -1,10 +1,50 @@
-#bootstrap-override, #topics {
-    border: solid 1px black;
-    width: 100%;
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: auto 0;
 }
 
-.actor-button {
+.functionality {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-group {
+    display: block;
+    width: 100%;
+    padding-left: 40%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 20px;
+
+}
+
+#actorInput {
+    border: 1px solid black;
+    margin-left: 20px;
+}
+
+#addActor {
+    display: block;
+    margin-left: 47%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+button {
     background-color: teal;
     color: white;
     margin: 10px;
+    padding: 2px;
+    width: 140px;
+    box-shadow: 2px;
 }
+
+.inline {
+    display: inline-block;
+    margin: 10px;
+}
+
